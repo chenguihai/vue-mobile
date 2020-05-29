@@ -1,0 +1,139 @@
+.alterPhone,.alterPhoneIng{
+    &>header {
+        height: rem(88);
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>div{
+            &>img{
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+       
+        &>h2 {
+            font-size: rem(34);
+            color: #030303;
+        }
+
+        &>.dian{
+            display: flex;
+            margin-right: rem(44);
+
+            &>div {
+                width: rem(8);
+                height: rem(8);
+                border-radius: 50%;
+                background: #999;
+                margin-right: 6px;
+            }
+        }
+
+    }
+    &>.verifyPhone{
+        &>span{
+            display: block;
+            height: rem(77);
+            font-size: rem(30);
+            background: #f4f6f8;
+            color: #333;
+            font-weight: 500;
+            line-height: rem(77);
+            padding-left: rem(30);
+        }
+        &>.Phone{
+            background: #fff;
+            padding: 0 rem(30);
+            font-size: rem(28);
+            color: #666;
+            &>span{
+                display: block;
+                padding: rem(43) 0 rem(48) 0;
+            }
+            &>div{
+                width: rem(560);
+                border-bottom: 1px solid #eee;
+            }
+        }
+        &>.nextTime{
+            width: 92%;//rem(690);
+            height: rem(88);
+            // background: #f3262d;
+            border-radius: rem(4);
+            text-align: center;
+            line-height: rem(88);
+            font-size: rem(30);
+            color: #fff;
+            margin: rem(155) 0 rem(36) rem(30);
+        }
+        &>.alterPhoTime{
+            margin: rem(218) 0 rem(36) rem(30);
+        }
+    }
+    &>.question{
+        padding: 0 rem(56) 0 rem(56);
+        font-size: rem(26);
+        color: #333;
+        &>.question_T{
+            &>h5{
+                margin-bottom: rem(10);
+            }
+            &>div{
+                width: rem(567);
+                display: flex;
+                flex-direction: column;
+                &>span:nth-child(1){
+                    line-height: rem(32);
+                }
+                &>span:nth-child(2){
+                    font-size: rem(24);
+                    color: #999;
+                    line-height: rem(35);
+                    margin-top: rem(10);
+                }
+            }
+            &>div:nth-child(3){
+                margin-top: rem(26);
+            }
+        }
+        &>.question_B{
+            height: rem(280);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &>.userIcon{
+                display: flex; 
+                margin-top: rem(141);     
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &>img{
+                        width: rem(54);
+                        height: rem(54);
+                        margin-bottom: rem(15);
+                    }
+                    &>span{
+                        font-size: rem(22);
+                        color: #666;
+                    }
+                }
+                &>div:nth-child(2){
+                    margin: 0 rem(174);
+                }
+            }
+            &>.userText{
+                margin-top: rem(30);
+                font-size: rem(20);
+                color: #666;
+            }
+        }
+        &>.alterPho{
+            margin-top: rem(319);
+        }
+    }
+}

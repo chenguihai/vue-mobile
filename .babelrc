@@ -1,0 +1,40 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "> .5%",
+            "last 2 versions",
+            "not ie <= 8",
+            "iOS >= 9",
+            "safari >= 7"
+          ]
+        }
+      }
+    ],
+    "stage-0",
+    "es2015"
+  ],
+  "plugins": [
+    "transform-vue-jsx",
+    "transform-runtime",
+    "transform-class-properties"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "env",
+        "es2015",
+        "stage-0"
+      ],
+      "plugins": [
+        "transform-vue-jsx",
+        "transform-es2015-modules-commonjs",
+        "dynamic-import-node"
+      ]
+    }
+  }
+}

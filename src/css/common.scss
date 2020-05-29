@@ -1,0 +1,248 @@
+@charset "UTF-8";
+$width100: 100%;
+$fontColor: #ff8800;
+$red: #f3262d;
+$btn_dis: #fbbdc0;
+$price: #ff0027;
+$order_bg: #F66157;
+$tips: #F2443A;
+$pass: #0ba06c;
+$green: #a1df2a;
+$price_green: #0C860C;
+$orange: #ff9b2f;
+$red_bg: #feeded;
+$black: #030303;
+$blue: #0066cc;
+$invitation:#FF6712;
+$c_333: #333;
+$c_666: #666;
+$c_888: #888;
+$c_999: #999;
+$c_eee: #eee;
+$c_ddd: #ddd;
+$c_ccc: #ccc;
+$white: #fff;
+$d8d8d8: #d8d8d8;
+$splite_line: #979797;
+$f4f4f4: #f4f4f4;
+$dfdfdf: #dfdfdf;
+$c_bg: #f4f6f8;
+$w_0: 0;
+$w_10: 10px;
+$w_15: 15px;
+$w_20: 20px;
+$w_30: 30px;
+$font: PingFangSC-Regular,
+PingFang SC;
+.font-red {
+    color: $red;
+}
+
+@function rem($n) {
+    @return $n / (750 / 10)+rem;
+}
+
+@function getTop($n) {
+    @return ($n - 1206 / 2) / (750 / 16)+rem;
+}
+
+@function getLeft($n) {
+    @return ($n - 750 / 2) / (750 / 16)+rem;
+}
+
+@function getRight($n) {
+    @return (($n - 750) / 2) / (750 / 16)+rem;
+}
+
+@mixin center($left, $top) {
+    //左右居中 上变
+    position: absolute;
+    left: 50%;
+    top: rem($top);
+    margin: 0 0 0 getLeft($left);
+}
+
+@mixin centerlt($left, $top) {
+    //上下，左右居中
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: getTop($top) 0 0 getLeft($left);
+}
+
+@mixin centerrt($right, $top) {
+    //上下，左右居中
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin: getTop($top) getRight($right) 0 0;
+}
+
+@mixin middlert($right, $top) {
+    //上下居中 右变
+    position: absolute;
+    right: rem($right);
+    top: 50%;
+    margin: getTop($top) 0 0 0;
+}
+
+@mixin centerb($left, $bottom) {
+    //左右居中 下变
+    position: absolute;
+    left: 50%;
+    bottom: rem($bottom);
+    margin: 0 0 0 getLeft($left);
+}
+
+@mixin leftTop($left, $top) {
+    //左变 上变
+    position: absolute;
+    left: rem($left);
+    top: rem($top);
+}
+
+@mixin rightTop($right, $top) {
+    //右变 上变
+    position: absolute;
+    right: rem($right);
+    top: rem($top);
+}
+
+@mixin leftBottom($left, $bottom) {
+    //右变 上变
+    position: absolute;
+    left: rem($left);
+    bottom: rem($bottom);
+}
+
+@mixin rightBottom($right: 15px, $bottom: 0px) {
+    //右变 上变
+    position: absolute;
+    right: $right;
+    bottom: $bottom;
+    z-index: 10;
+}
+
+@mixin flex($justify: space-between, $items: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $items;
+}
+
+@mixin square($long) {
+    width: $long + px;
+    height: $long + px;
+}
+
+@mixin borderBox($val: border-box) {
+    box-sizing: $val;
+    -webkit-box-sizing: $val;
+    -moz-box-sizing: $val;
+}
+
+@mixin boxSha($val) {
+    box-shadow: $val;
+    -webkit-box-shadow: $val;
+    -moz-box-shadow: $val;
+}
+
+@mixin round($angle: 50%) {
+    border-radius: $angle;
+    -webkit-border-radius: $angle;
+    -moz-border-radius: $angle;
+}
+
+@mixin height($h: 37px) {
+    height: $h;
+    line-height: $h;
+}
+
+@mixin centerLT() {
+    //上下，左右居中
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin danger_btn($w: 300px, $h: 88px, $r: 8px) {
+    width: rem($w);
+    @include height(rem($h));
+    text-align: center;
+    color: $red;
+    background: $white;
+    border-radius: $r;
+    font-size: rem(30px);
+    border: 1px solid $red;
+}
+
+@mixin plain_btn($w: 300px, $h: 88px, $r: 8px) {
+    width: rem($w);
+    @include height(rem($h));
+    color: $white;
+    background: $red;
+    text-align: center;
+    font-size: rem(30px);
+    border-radius: $r;
+}
+
+@mixin ellipsis($count:1) {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $count;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: normal;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='file'],
+button {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+/deep/ .van-nav-bar {
+    background: #fff;
+}
+
+/deep/ .van-nav-bar .van-icon {
+    color: #999 !important;
+}
+
+/deep/ .van-nav-bar__title {
+    font-size: rem(28);
+}
+
+/deep/ .van-nav-bar__title {
+    font-size: rem(28);
+}
+
+
+/*=============================================
+=            订单内部按钮            =
+=============================================*/
+
+.contract-btn {
+    font-size: 28px;
+    font-family: $font;
+    font-weight: 400;
+    padding: 14px 24px;
+    line-height: 40px;
+    @include round(4px);
+    margin-top: 20px;
+    display: inline-block;
+    background: $red;
+    color: #fff;
+    text-align: center;
+    &.dis-btn {
+        background: #ddd;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+
+/*=====  End of 订单内部按钮  ======*/

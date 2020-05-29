@@ -1,0 +1,98 @@
+.withdraw {
+    width: 100%;
+    height: 100%;
+    .van-cell:not(:last-child)::after{
+        left: 0;
+        border-bottom: none;
+    }
+    &>header {
+        height: rem(88);
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+
+
+        &>h2 {
+            flex: 1;
+            padding-right: rem(44);
+            font-size: rem(34);
+            color: #030303;
+            text-align: center;
+        }
+    }
+
+    &>.withdrawData {
+        width: rem(658);
+        height: rem(458);
+        background: #fff;
+        padding: rem(23) rem(42) 0 rem(23);
+        margin: rem(15) auto;
+
+        &>.bank {
+            font-size: rem(28);
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(238,238,238);
+
+            &>img {
+                width: rem(20);
+                height: rem(36);
+            }
+
+        }
+
+        &>.withdrawMoney {
+            margin-top: rem(84);
+
+            &>span {
+                font-size: rem(26);
+                color: #333;
+            }
+        }
+
+        &>.withdrawBut {
+            margin-top: rem(32);
+            font-size: rem(24);
+            color: #666;
+            display: flex;
+
+            &>span {
+                display: flex;
+                margin-right: rem(5);
+
+                &>p {
+                    color: #f3262d;
+                }
+            }
+        }
+    }
+
+    &>.submit {
+        display: flex;
+        justify-content: center;
+        margin-top: rem(133);
+
+        &>span {
+            width: rem(640);
+            height: rem(88);
+            font-size: rem(30);
+            color: #fff;
+            text-align: center;
+            line-height: rem(88);
+            border-radius: rem(8);
+            background: #f3262d;
+
+        }
+    }
+}

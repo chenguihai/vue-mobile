@@ -1,0 +1,178 @@
+/* 未实名认证 */
+.pop-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+
+  &.mb_30 {
+    margin-bottom: 30px;
+  }
+}
+
+.pop-tip {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 82px;
+  // margin-bottom: 40px;
+  line-height: 37px;
+  color: #666;
+  text-align: center;
+
+  &.left {
+    text-align: left;
+  }
+  &.price {
+     margin-bottom: 0;
+  }
+}
+
+.pop_delete, .pop-single {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
+.pop_delete {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.pop-single {
+  padding-top: 13px;
+  margin-bottom: 67px;
+}
+
+.pop-btn, .pop-empty-btn {
+  width: 200px;
+  @include height(68px);
+  font-size: 28px;
+  text-align: center;
+  @include round(4px);
+}
+
+.pop-btn {
+  background: $red;
+  color: #fff;
+
+  &.active {
+    width: 380px;
+    @include height(88px);
+    border-radius: 8px;
+  }
+}
+
+.pop-empty-btn {
+  background: $white;
+  border: 1px solid $red;
+  color: $red;
+}
+
+.pop-top { //分类
+  font-size: 22px;
+  color: $c_666;
+  line-height: 30px;
+  margin-bottom: 30px;
+
+  &.mb_48 {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+}
+
+.pop-bottom { //分类
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 50px;
+
+  &.w_rate {
+    width: 100%;
+  }
+}
+
+/* 选择合同模板 */
+.contract-tip {
+  margin-top: -30px;
+  @extend .pop-tip;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.contract-ug-btn {
+  width: 400px;
+  height: 80px;
+  background: #fff;
+  @include round(4px);
+  border: 3px solid rgba(243, 38, 45, 1);
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px;
+  font-family: $font;
+  font-weight: 400;
+  color: $red;
+  margin-top: 43px;
+}
+
+.contract-logo {
+  width: 494px;
+  height: 337px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* 客服电话 */
+.pop-kf {
+  font-size: 26px;
+  font-weight: 400;
+  color: #333;
+  margin-top: -52px;
+
+  span {
+    font-size: 50px;
+    font-weight: 400;
+    color: $red;
+    margin-left: 10px;
+  }
+}
+
+/* 发送合同 */
+
+.send-btn {
+  margin-top: 50px;
+  width: 200px;
+  @include round(4px);
+}
+
+.pop-qs {
+  margin-top: -52px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.pop_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 82px;
+  .pop_label {
+    height: 37px;
+    line-height: 37px;
+    font-size: 26px;
+    color: $c_666;
+    margin-right: 16px;
+  }
+}
+
+.pop-tip {
+
+  &.borderLR {
+    border-radius:2px;
+    border: 1px solid #ebedf0;
+
+    &:after {
+      display: none;
+    }
+  }
+}

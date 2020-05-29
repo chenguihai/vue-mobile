@@ -1,0 +1,250 @@
+.refundData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>header {
+        height: rem(88);
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+
+        &>h2 {
+            font-size: rem(34);
+            color: #030303;
+        }
+
+        &>.dian {
+            display: flex;
+            margin-right: rem(44);
+
+            &>div {
+                width: rem(8);
+                height: rem(8);
+                border-radius: 50%;
+                background: #999;
+                margin-right: 6px;
+            }
+        }
+
+    }
+
+    &>.refundDataList {
+        width: 100%;
+        padding-top: rem(88);
+        font-size: rem(22);
+        color: #999;
+
+        &>.refunType {
+            height: rem(177);
+            padding: 0 rem(50) 0 rem(30);
+            background: #F66157;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &>div:nth-child(1) {
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+
+                &>span:nth-child(1) {
+                    font-size: rem(26);
+                    margin-bottom: rem(10);
+                }
+
+                &>span:nth-child(2) {
+                    font-size: rem(22);
+                }
+               
+            }
+
+            &>div:nth-child(2) {
+                &>span {
+                    width: rem(135);
+                    height: rem(50);
+                    border-radius: rem(25);
+                    display: block;
+                    text-align: center;
+                    line-height: rem(50);
+                    background: #fff;
+                    font-size: rem(24);
+                    color: #666;
+                }
+            }
+        }
+
+        &>.refunTime {
+            padding: rem(20) 0 rem(20) rem(30);
+            border-bottom: rem(1) solid #eee;
+           
+            color: #333;
+            &>span:nth-child(2) {
+                color: #333;
+            }
+            
+        }
+        &>.refunTimej{
+            display: flex;
+            flex-direction: column;
+            &>.jjyy{
+                margin-top: rem(10);
+                color: #f3262d!important;
+            }
+        }
+
+        &>.type_1 {
+            border-bottom: 0;
+        }
+
+        &>.back {
+            height: rem(20);
+            background: #f4f6f8;
+        }
+
+        &>.refunCon {
+            padding-left: rem(30);
+            .titles{
+              width: 17%;
+            }
+            &>.sqTime {
+                padding: rem(20) 0;
+                font-size: rem(22);
+                border-bottom: rem(1) solid #eee;
+                &>span:nth-child(2){
+                    color: #666;
+                }
+            }
+
+            &>.refunRadio {
+                padding: rem(20) 0;
+                border-bottom: rem(1) solid #eee;
+              
+                &>span {
+                    display: flex;
+                
+                    &>p {
+                        // width: rem(570);
+                        color: #666;
+                    }
+
+                }
+
+                &>span:nth-child(2) {
+                    margin: rem(30) 0;
+
+                    &>.content {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                &>span:nth-child(3) {
+                    &>p {
+                        color: #ff0027;
+                    }
+
+                }
+            }
+
+            &>.refunDesc {
+                border-bottom: 0;
+
+                &>span:nth-child(2) {
+                    &>.describe {
+                        line-height: rem(30);
+                    }
+                }
+
+                &>span:nth-child(3) {
+                    display: flex;
+
+                    &>p {
+                        width: rem(230);
+
+                        &>a {
+                            color: #0066CC;
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+    }
+    &>.reminder {
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+
+        &>.reminderData {
+            width: rem(600);
+            height: rem(337);
+            border-radius: rem(20);
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &>h4 {
+                font-size: rem(30);
+                color: #333;
+                margin: rem(50) 0 rem(31) 0;
+            }
+
+            &>.spanD {
+                display: flex;
+                flex-direction: column;
+                width: rem(413);
+                text-align: center;
+
+                &>span {
+                    font-size: rem(26);
+
+                    color: #666;
+                    margin-bottom: rem(22);
+                }
+            }
+
+            &>button {
+                width: rem(200);
+                height: rem(88);
+                color: #fff;
+                border-radius: rem(8);
+                font-size: rem(28);
+                margin-top: rem(34);
+                background: #f3262d;
+                border: 0;
+            }
+        }
+        &>.close{
+            margin-top: rem(58);
+            &>img{
+                width: rem(78);
+                height: rem(78);
+            }
+        }
+    }
+}

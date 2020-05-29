@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+        color: transparent;
+    }
+}
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+footer,
+header,
+nav,
+section,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: PingFangSC-Regular, PingFang SC;
+    // vertical-align: baseline;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    background-color: #f4f6f8;
+    line-height: 1;
+    color: #333;
+    font-weight: 400;
+    font-size: rem(24);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:active,
+a:link,
+a:hover {
+    color: #333;
+}
+
+.blue,
+.blue:link {
+    color: $blue;
+}
+
+img {
+    border: none;
+    pointer-events: none;
+}
+
+input {
+    appearance: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    /*//清除ios默认圆角*/
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button {
+        display: none;
+    }
+}
+
+.clearFix:after,
+.clearFix:before {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.clearFix {
+    zoom: 1;
+}
+
+.red {
+    color: $red;
+}
+
+.price_red {
+    color: $price;
+}
+
+.c_999 {
+    color: $c_999;
+}
+
+.c_333 {
+    color: $c_333;
+}
+
+.mb_10 {
+    margin-bottom: $w_10;
+}
+
+.mr_30 {
+    margin-right: $w_30;
+}
+
+.pr {
+    position: relative;
+}
+
+.container,
+.contain {
+    background: $white;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.container {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.bg {
+    background: $c_bg;
+}
+
+.split_line {
+    height: $w_20;
+    background: $c_bg;
+}
+
+#app {
+    height: 100%;
+}
+
+
+/*=============================================
+=            Body 的主题            =
+=============================================*/
+
+.F4F6F8 {
+    background: #f4f6f8;
+}
+
+.fff {
+    background: #fff;
+}
+
+.box100 {
+    height: 100%;
+}
+
+
+/*=====  End of Body 的主题  ======*/
+
+//底部弹框的样式
+.bottom_popup {
+    padding: 40px 35px 0;
+    text-align: center;
+    .title {
+        @include height(37px);
+        font-size: 26px;
+    }
+    .attr_ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 24px;
+        padding: 56px 0 90px;
+        .attr_li {
+            width: 200px;
+            height: 58px;
+            border-radius: 4px;
+            @include height(56px);
+            background: $c_bg;
+            margin-top: 14px;
+            border: 1px solid transparent;
+            &:not(:nth-child(3n + 3)) {
+                margin-right: 40px;
+            }
+        }
+        .active {
+            border-color: $red;
+            background-color: $red_bg;
+            color: $red;
+        }
+    }
+}
+
+//单个按钮
+.single_btn_200 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 56px;
+    font-size: 28px;
+    border-radius: 28px;
+    border: 1px solid $red;
+    color: $red;
+    background: $white;
+    &.active {
+        background: $red;
+        color: $white;
+    }
+}
+
+.van-toast--text {
+    height: rem(110);
+}
+
+.van-toast {
+    background-color: rgba(51, 51, 51, .6);
+}
+
+.m-news-article * {
+    width: 100% !important;
+}
+
+
+/**覆盖样式**/
+
+.van-popup--bottom.van-popup--round {
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.ql-editor.ql-blank::before {
+    font-style: normal !important;
+}
+
+.m-share-tips-bottom {
+    background: #fff;
+    color: #333 !important;
+    font-size: rem(28) !important;
+    width: rem(430) !important;
+    // height: rem(180) !important;
+    display: flex!important;
+    flex-wrap: wrap!important;
+    align-items: center!important;
+    padding: rem(42) rem(70)!important;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5)!important;
+    border-radius: 10px!important;
+    justify-content: center!important;
+    font-weight: 500!important;
+    &>i {
+        color: #333 !important;
+    }
+    .m-share-iconfont {
+        margin: 0 !important;
+    }
+}
+
+.qrcodeBox {
+    // width: 640px;
+    position: fixed;
+    z-index: 2147483647;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .postRelative {
+        width: 540px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+    .qr_img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 30px;
+        overflow: hidden;
+        // margin-bottom: 20px;
+        pointer-events: auto;
+    }
+    .qr_desc {
+        font-size: 24px;
+        color: #333;
+    }
+}
+
+.down_text {
+    line-height: 24px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin: 20px auto 50px;
+}
+
+.post_download {
+    display: block;
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;
+    background: url('/static/images/big-close.png') no-repeat center;
+    background-size: 100%;
+}

@@ -1,0 +1,116 @@
+.addBank {
+  &>.bankInput {
+    padding: 0 rem(30) 0 rem(30);
+
+    &>.bankName {
+      // border-bottom: 1px solid #eee;
+      position: relative;
+      &>.InvoiceType {
+        padding: rem(27) 0 rem(15);
+        border-bottom: 1px solid #eee;
+        &>.van-cell__value {
+          display: flex;
+
+          &>.van-cell {
+            padding: 0;
+          }
+
+          &>span:nth-child(1) {
+            color: #333;
+            font-size: rem(28);
+            width:4.9rem;
+          }
+
+          &>span:nth-child(2) {
+            color: #999;
+            font-size: rem(28);
+            margin-left: rem(141)
+          }
+        }
+        &>.van-cell__right-icon{
+          margin-left: rem(-20);
+        }
+      }
+    }
+    
+    &>.agreement {
+      font-size: rem(26);
+      margin-top: 0.15rem;
+      &>.radio {
+        display: flex;
+        align-items: center;
+
+        //  &>.van-radio{
+        //      display: flex;
+        //      align-items: center;
+        //      &>.van-radio__icon{
+        //         height: rem(24);
+        //          &>.van-icon{
+        //              border-radius: rem(4);
+        //              width: rem(24);
+        //              height: rem(24);
+        //              background: #eee;
+        //              border: 1px solid #999;
+        //          }
+        //      }
+        //     &>.van-radio__label{
+        //         color: #999;
+        //         &>span{
+        //             color: #0066CC;
+        //         }
+        //     } 
+        //  } 
+        &>.box {
+          border-radius: rem(4);
+          width: rem(24);
+          height: rem(24);
+          background: #eee;
+          border: 1px solid #999;
+          margin-right: rem(10);
+        }
+        &>.box_red{
+          width: rem(24);
+          height: rem(24);
+          border: 1px solid #f3262d;
+          background: url("../../../assets/userContent/redG.jpg");
+          background-size: 100% 100%;
+        }
+        &>a {
+          color: #0066CC;
+        }
+      }
+    }
+
+    &>.submitBank {
+      display: flex;
+      flex-direction: column;
+
+      &>span {
+        width: 100%;//rem(690);
+        font-size: rem(26);
+      }
+
+      &>span:nth-child(1) {
+        height: rem(88);
+        font-size: rem(30);
+        text-align: center;
+        line-height: rem(88);
+        color: #fff;
+        background: #f3262d;
+        border-radius: rem(8);
+        margin-top: rem(188);
+      }
+
+      &>span:nth-child(2) {
+        margin: rem(16) 0;
+        color: #333;
+      }
+
+      &>span:nth-child(3) {
+        color: #999;
+        line-height: rem(40);
+
+      }
+    }
+  }
+}

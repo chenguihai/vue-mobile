@@ -1,0 +1,289 @@
+.accountUser {
+    width: 100%;
+    background: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &>header {
+        height: rem(88);
+        width: 100%;
+        // background: #fff;
+        display: flex;
+        align-items: center;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+
+
+        &>h2 {
+            flex: 1;
+            padding-right: rem(44);
+            font-size: rem(34);
+            color: #030303;
+            text-align: center;
+        }
+    }
+
+    &>.userData {
+        border-bottom: none;
+        padding: 0 rem(15);
+        margin-bottom: rem(12);
+
+        &>.userImg {
+            margin-bottom: rem(12);
+            height: rem(139);
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: rem(35);
+            position: relative;
+            &>span {
+                font-size: rem(28);
+                color: #333;
+                margin-left: -0.2rem;
+            }
+
+            &>div {
+                display: flex;
+                align-items: center;
+
+                &>img:nth-child(1) {
+                    width: rem(75);
+                    height: rem(81);
+                    border-radius: 50%;
+                }
+
+                &>img:nth-child(2) {
+                    width: rem(12);
+                    height: rem(25);
+                    margin: 0 rem(35) 0 rem(29);
+                }
+            }
+            .uploader{
+                position: absolute;
+                width: 100%;
+                top: 0;
+                right: 0;
+                opacity: 0;
+                height: 100%;
+                margin: 0 rem(35) 0 rem(29);
+               /deep/ .van-uploader__wrapper{
+                    height: 100%;
+                    width: 100%;
+                    .van-uploader__input-wrapper{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &>.changImg{
+            
+            &>.activeClick{
+                font-size: rem(28);
+                color: #0066CC;
+                display: flex;
+                justify-content: space-between;
+                padding: rem(25) rem(66);
+            }
+            &>.phoneImg{
+                height: rem(230);
+                background: #f4f6f8;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &>span{
+                    width: 100%;
+                    padding: rem(41) 0 rem(32);
+                    font-size: rem(30);
+                    color: #333;
+                    text-align: center;
+                }
+                &>span:nth-child(2){
+                    border-top: 1px solid #ccc;
+                }
+            }
+        }
+        &>.dataList {
+            // margin-top: rem(12);
+            background: #fff;
+            border-bottom: rem(1) solid #eee;
+            &>.userName {
+                height: rem(102);
+                padding: 0 rem(30) 0 rem(20);
+                display: flex;
+                font-size: rem(28);
+                color: #333;
+                justify-content: space-between;
+                align-items: center;
+                // border-bottom: rem(1) solid #eee;
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+
+                    &>span {
+                        color: #666;
+                    }
+
+                    &>img {
+                        width: rem(12);
+                        height: rem(25);
+                        margin: 0 0 0 rem(29);
+                    }
+                }
+            }
+        }
+        &>.userSxe {
+            border-bottom: 1px solid #eee;
+        }
+        &>.birthday{
+            border-bottom: 1px solid #eee;
+        }
+        &>.dataList:last-child {
+            border-bottom: 0;
+        }
+
+        &>.userAddress {
+            margin: 0;
+            border: 0;
+
+            &>.userName {
+                &>div {
+                    &>span {
+                        display: block;
+                        width: rem(500);
+                        text-align: right;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+
+        &>.userOperation {
+            margin-top: rem(0);
+        }
+    }
+
+    &>.quitLogin {
+        padding: 0 rem(15);
+
+        &>span {
+            display: block;
+            height: rem(100);
+            background: #fff;
+            text-align: center;
+            line-height: rem(100);
+            font-size: rem(28);
+            color: #333;
+        }
+
+    }
+
+    &>.userBottom {
+        height: rem(280);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &>.userIcon {
+            display: flex;
+            margin-top: rem(73);
+
+            &>div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &>img {
+                    width: rem(54);
+                    height: rem(54);
+                    margin-bottom: rem(15);
+                }
+
+                &>span {
+                    font-size: rem(22);
+                    color: #666;
+                }
+            }
+
+            &>div:nth-child(2) {
+                margin: 0 rem(174);
+            }
+        }
+
+        &>.userText {
+            margin-top: rem(20);
+            font-size: rem(20);
+            color: #666;
+        }
+    }
+    &>.reminder {
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+
+        &>.reminderData {
+            width: rem(600);
+            height: rem(399);
+            border-radius: rem(20);
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &>h4 {
+                font-size: rem(30);
+                color: #333;
+                margin: rem(50) 0 rem(31) 0;
+            }
+
+            &>.spanD {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+                &>span {
+                    font-size: rem(26);
+                    color: #666;
+                    margin-bottom: rem(12);
+                }
+            }
+
+            &>button {
+                width: rem(480);
+                height: rem(88);
+                color: #fff;
+                border-radius: rem(8);
+                font-size: rem(28);
+                margin-top: rem(74);
+                background: #f3262d;
+                border: 0;
+            }
+        }
+        &>.close{
+            margin-top: rem(88);
+            &>img{
+                width: rem(78);
+                height: rem(78);
+            }
+        }
+    }
+}

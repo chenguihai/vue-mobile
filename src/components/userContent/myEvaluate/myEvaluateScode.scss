@@ -1,0 +1,198 @@
+.myEvaluate {
+    &>header {
+        height: rem(88);
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+
+        &>h2 {
+            font-size: rem(34);
+            color: #030303;
+        }
+
+        &>.dian {
+            display: flex;
+            margin-right: rem(44);
+
+            &>div {
+                width: rem(8);
+                height: rem(8);
+                border-radius: 50%;
+                background: #999;
+                margin-right: 6px;
+            }
+        }
+
+    }
+
+    &>.InvoTab {
+        width: 100%;
+        position: fixed;
+        top: rem(88);
+        height: rem(77);
+
+        background: #fff;
+        margin-bottom: rem(20);
+
+        &>ul {
+            height: rem(77);
+            padding: 0 rem(30);
+            background: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 0 0 rem(20) rem(20);
+
+            &>li {
+                font-size: rem(26);
+                color: #333;
+
+            }
+
+            &>li:nth-child(2) {
+                margin: 0 rem(48);
+            }
+
+            &>.active {
+                color: #f3262d;
+            }
+        }
+    }
+
+    &>.van-pull-refresh {
+        padding-top: rem(185);
+
+        &>.van-pull-refresh__track {
+            &>.van-pull-refresh__head {
+                display: none;
+            }
+
+            &>.van-list {
+                &>.myEvaluateData {
+
+
+                    &>ul {
+                        &>li {
+                            display: flex;
+                            flex-direction: column;
+                            padding: rem(30) rem(20);
+                            background: #fff;
+                            border-radius: rem(20);
+                            margin-bottom: rem(20);
+
+                            &>.EvaData_top {
+                                &>.shopName {
+                                    display: flex;
+                                    align-items: center;
+                                    padding-bottom: rem(20);
+
+                                    &>img {
+                                        width: rem(29);
+                                        height: rem(28);
+                                    }
+
+                                    &>span {
+                                        margin-left: rem(10);
+                                        font-size: rem(26);
+                                        color: #333;
+                                        width: rem(417);
+                                        white-space: nowrap;
+                                        word-wrap: break-word;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                    }
+                                }
+
+                                &>.EvaData_S {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    &>div:first-child {
+                                        font-size: rem(20);
+                                        color: #f3262d;
+                                        display: flex;
+
+                                        align-items: center;
+
+                                        &>img {
+                                            width: rem(36);
+                                            height: rem(36);
+                                            margin-right:rem(6);
+                                        }
+
+                                        &>span {
+                                            margin: 0 rem(10);
+                                        }
+                                    }
+
+                                    &>div:last-child {
+                                        font-size: rem(22);
+                                        color: #999;
+                                    }
+                                }
+
+                                &>.EvaData_C {
+                                    font-size: rem(22);
+                                    color: #333;
+                                    line-height: rem(30);
+                                    padding: rem(10) 0 rem(20) 0;
+                                    border-bottom: rem(1) solid #eee;
+
+                                    &>span {
+                                        display: block;
+                                        color: #333;
+                                        width: rem(710);
+                                        word-wrap: break-word;
+
+                                    }
+                                    &>span.m-grey{
+                                        color:#666;
+                                    }
+                                }
+                            }
+
+                            &>.EvaData_con {
+                                display: flex;
+                                flex-direction: column;
+
+                                &>span {
+                                    width: rem(645);
+                                    white-space: nowrap;
+                                    word-wrap: break-word;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    font-size: rem(22);
+                                    color: #999;
+                                }
+
+                                &>span:nth-child(1) {
+                                    font-size: rem(26);
+                                    color: #0066CC;
+                                    padding: rem(20) 0 rem(20) 0;
+                                }
+                            }
+                        }
+
+                        &>li:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

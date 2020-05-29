@@ -1,0 +1,39 @@
+.addBank {
+    background: #fff;
+    &>header {
+        height: rem(88);
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+
+        &>h2 {
+            font-size: rem(34);
+            color: #030303;
+        }
+
+        &>.dian {
+            display: flex;
+            margin-right: rem(44);
+
+            &>div {
+                width: rem(8);
+                height: rem(8);
+                border-radius: 50%;
+                background: #999;
+                margin-right: 6px;
+            }
+        }
+
+    }
+}

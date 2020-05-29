@@ -1,0 +1,117 @@
+.step_title {
+  @include height(78px);
+  text-indent: $w_30;
+  background: $c_bg;
+  font-size: $w_30;
+  font-weight: bold;
+}
+
+.company_name {
+  .van-cell {
+    padding: 12px 15px;
+
+    &:not(:last-child)::after {
+      right: 16px;
+      border-color: $c_ccc;
+    }
+
+    .van-cell__right-icon {
+      margin-left: 0;
+    }
+  }
+
+  .van-cell__title {
+    flex: none;
+  }
+
+  //.van-cell__value, .van-field__body {
+    //font-size: rem(24);
+  //}
+
+
+  .desc_wrap {
+    padding: $w_30;
+  }
+
+  .company_desc {
+    height: 200px;
+    background: $white;
+    border: 1px solid $c_ccc;
+    padding: 10px;
+  }
+}
+
+//picker
+.picker {
+  .van-picker__toolbar {
+    padding: 0 25px;
+  }
+
+  .van-picker__columns {
+    background: $c_bg;
+  }
+}
+
+.jump_wrap {
+  padding: 0 $w_30;
+
+  &.active {
+    padding: 0;
+
+    .item {
+      border-bottom: none;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26px;
+    height: 97px;
+    border-bottom: 1px solid $c_ccc;
+
+    .name {
+      flex: 1;
+    }
+
+    .text, .place {
+      font-size: 24px;
+      margin-right: $w_10;
+    }
+
+    .place {
+      color: $c_999;
+    }
+
+    .text {
+      color: $c_333;
+    }
+
+    .arrow {
+      width: 12px;
+      height: 22px;
+    }
+  }
+}
+
+.cell_item {
+  //flex: 1;
+  margin-left: 27px;
+  padding: 0;
+  //font-size: rem(26);
+  font-family: $font;
+  font-weight: 400;
+  color: #333;
+  @include ellipsis();
+}
+
+.upload_wrap {
+  padding: $w_30;
+
+  .title {
+    @include height(37px);
+    font-size: 26px;
+    margin-bottom: $w_30;
+  }
+}

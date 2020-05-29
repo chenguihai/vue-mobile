@@ -1,0 +1,100 @@
+.backfillMoney{
+    &>header {
+        height: rem(88);
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(30);
+            }
+        }
+
+        &>h2 {
+            font-size: rem(34);
+            color: #030303;
+        }
+
+        &>.dian {
+            display: flex;
+            margin-right: rem(44);
+
+            &>div {
+                width: rem(8);
+                height: rem(8);
+                border-radius: 50%;
+                background: #999;
+                margin-right: 6px;
+            }
+        }
+
+    }
+    &>.backfillCon{
+       
+        &>span {
+            display: block;
+            height: rem(77);
+            background: #f4f6f8;
+            font-size: rem(30);
+            color: #333;
+            padding-left: rem(45);
+            line-height: rem(77);
+            font-weight: 500;
+        }
+        &>.backfillData{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: rem(26);
+            color: #333;
+            padding: 0 rem(30);
+            &>.moneyImg{
+                &>img{
+                    width: rem(150);
+                    height: rem(150);
+                    margin: rem(48) 0 rem(20) 0;
+                }
+            }
+            &>.backfillText{
+                margin-bottom: rem(87);
+                &>span{
+                    line-height: rem(40);
+                }
+            }
+            &>.money{
+                width: rem(690);
+                border: 1px solid #ccc;
+            }
+            &>.nextWay {
+                width: rem(690);
+                border-radius: rem(4);
+                text-align: center;
+                font-size: rem(30);
+                color: #fff;
+                margin: rem(129) 0 rem(20) 0;
+                &>.van-button {
+                    height: rem(88) !important;
+                    line-height: rem(88);
+                }
+            }
+            &>.prompt{
+                color: #666;
+                font-size: rem(24);
+                
+                &>span:nth-child(2){
+                    color: #999;
+                    display: block;
+                    line-height: rem(35);
+                    margin-top: rem(10);
+                }
+            }
+        }
+        
+    }
+}

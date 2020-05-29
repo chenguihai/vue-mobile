@@ -1,0 +1,145 @@
+.realName {
+    &>header {
+        height: rem(88);
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+
+        &>h2 {
+            font-size: rem(34);
+            color: #030303;
+        }
+
+        &>.dian {
+            display: flex;
+            margin-right: rem(44);
+
+            &>div {
+                width: rem(8);
+                height: rem(8);
+                border-radius: 50%;
+                background: #999;
+                margin-right: 6px;
+            }
+        }
+
+    }
+
+    &>.realHome {
+        padding: 0 rem(30);
+
+        &>span {
+            display: block;
+            font-size: rem(26);
+            color: #666;
+            text-align: center;
+            margin: rem(30) 0 rem(24) 0;
+        }
+
+        &>.realPer {
+            height: rem(354);
+            padding-left: rem(50);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // background: #fff;
+            background: url('../../../assets/auth/user.png') no-repeat #fff rem(480) bottom;
+            background-size: rem(200) rem(240);
+            border-radius: rem(20);
+            margin-bottom: rem(30);
+            box-shadow:0px 4px 20px 0px rgba(0,0,0,0.1);
+            &>span:nth-child(1) {
+                font-size: rem(36);
+                color: #333;
+            }
+
+            &>span:nth-child(2) {
+                width: rem(351);
+                font-size: rem(24);
+                color: #999;
+                margin: rem(30) 0 rem(50) 0;
+                line-height: rem(34);
+            }
+
+            &>span:nth-child(3) {
+                width: rem(200);
+                height: rem(58);
+                background: linear-gradient(180deg, rgba(254, 139, 17, 1) 0%, rgba(255, 108, 1, 1) 100%);
+                border-radius: rem(4);
+                font-size: rem(30);
+                color: #fff;
+                text-align: center;
+                line-height: rem(58);
+            }
+        }
+        &>.realEnt{
+            background: url('../../../assets/auth/company.png') no-repeat #fff rem(470) bottom;
+            background-size: rem(205) rem(242);
+
+            &>span:nth-child(3){
+    
+                background:linear-gradient(180deg,rgba(97,145,255,1) 0%,rgba(48,95,255,1) 100%);
+            }
+        }
+    }
+    &>.realPerName{
+        height: rem(1246);
+        background: #fff;
+        border-top: rem(1) solid #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &>:nth-child(1){
+            font-size: rem(36);
+            margin-top: rem(83);
+            color: #0BA06C;
+            display: flex;
+            align-items: center;
+            &>img{
+                width: rem(48);
+                height: rem(48);
+                margin-right: rem(10);
+            }
+        }
+        &>:nth-child(2){
+            font-size: rem(26);
+            color: #666;
+            margin: rem(31) 0 rem(220) 0;
+            padding-left: rem(36);
+            &>span{
+                display: flex;
+                line-height: rem(40);
+                &>p{
+                    color: #333;
+                }
+            }
+        }
+        &>:nth-child(3){
+            
+            width: 92%;//rem(690);
+            height: rem(88);
+            font-size: rem(30);
+            background: #f3262d;
+            color: #fff;
+            border-radius: rem(4);
+            text-align: center;
+            line-height: rem(88);
+        }
+    }
+    &>.realEntName{
+        &>:nth-child(2){
+            margin: rem(31) 0 rem(163) 0;
+        }
+    }
+}

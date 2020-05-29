@@ -1,0 +1,214 @@
+.moneyRecord {
+    display: flex;
+    &>.detailData{
+        width: 100%;
+        
+    }
+    &>header {
+        height: rem(88);
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background: #f4f6f8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            width: rem(120);
+
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(20);
+            }
+        }
+
+        &>h2 {
+            padding-right: rem(44);
+            font-size: rem(34);
+            color: #030303;
+            text-align: center;
+        }
+
+        &>.screen {
+            font-size: rem(30);
+            color: #666;
+            display: flex;
+            align-items: flex-end;
+            margin-right: rem(10);
+
+            &>img {
+                width: rem(28);
+                height: rem(28);
+                margin-left: rem(10);
+            }
+        }
+    }
+
+    &>.van-pull-refresh {
+        width: 100%;
+        &>.van-pull-refresh__track {
+            &>.van-list {
+                &>.detailData {
+                    flex: 1;
+                    width: 100%;//rem(750);
+                    padding-top: rem(88);
+                    background: #fff;
+
+                    &>ul {
+                        padding: 0 rem(30);
+
+
+                        &>img {
+                            width: rem(200);
+                            height: rem(273);
+                            margin: rem(110) 0 rem(30);
+                        }
+
+                        &>li {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: rem(30) rem(10) rem(26);
+                            border-bottom: rem(1) solid #eee;
+
+                            &>.dataList-l {
+                                display: flex;
+                                flex-direction: column;
+
+                                &>span:nth-child(1) {
+                                    font-size: rem(28);
+                                    color: #333;
+                                    margin-bottom: rem(15);
+                                }
+
+                                &>span:nth-child(2) {
+                                    font-size: rem(22);
+                                    color: #999;
+                                    display: flex;
+
+                                    &>p {
+                                        margin-left: rem(60);
+                                    }
+                                }
+                            }
+
+                            &>.dataList-r {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                font-size: rem(24);
+                                color: #ff0027;
+                                font-weight: 500;
+
+                                &>span:nth-child(2) {
+                                    font-size: rem(26);
+                                    color: #666;
+                                    margin-top: rem(10);
+                                }
+                            }
+                        }
+
+                        &>li:last-child {
+                            border-bottom: 0;
+                        }
+                    }            
+                }
+            }
+        }
+    }
+
+    &>.no_data {
+        background: #f4f6f8;
+    }
+
+    &>.detaiChoice {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &>.detaiChoiceTop {
+            &>.detaiTime {
+                &>span {
+                    padding-left: rem(24);
+                    display: flex;
+                    height: rem(88);
+                    line-height: rem(88);
+                    font-size: rem(30);
+                    color: #333;
+                }
+
+                &>ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 0 rem(33) rem(24);
+                    border-bottom: rem(1) solid #eee;
+
+                    &>li {
+                        font-size: rem(24);
+                        color: #666;
+                        height: rem(56);
+                        background: #f4f6f8;
+                        text-align: center;
+                        line-height: rem(56);
+                        margin-right: rem(10);
+                        padding: 0 rem(26);
+                    }
+
+                    &>li:nth-child(1) {
+                        background: #fff;
+                    }
+
+                    &>.activeTime {
+                        height: rem(52);
+                        padding: 0 rem(22);
+                        color: #f3262d;
+                        // border: 1px solid #f3262d;
+                        background: url('../../../assets/arrowhead/backred.png') no-repeat right bottom #FEEDED;
+                        background-size: rem(28) rem(28);
+                    }
+                }
+            }
+
+            &>.detaiType {
+                &>span {
+                    margin-top: rem(41);
+                }
+
+                &>ul {
+                    border-bottom: 0;
+
+                    &>li {
+                        margin-bottom: rem(22);
+                        padding: 0 rem(30);
+                    }
+
+                    &>.activeTime {
+                        padding: 0 rem(26);
+                    }
+                }
+            }
+        }
+
+        &>.buttom {
+            display: flex;
+
+            &>span {
+                flex: 1;
+                height: rem(88);
+                font-size: rem(30);
+                color: #666;
+                text-align: center;
+                line-height: rem(88);
+                border-top: rem(1) solid #eee;
+            }
+
+            &>span:nth-child(2) {
+                background: #f3262d;
+                color: #fff;
+            }
+        }
+    }
+}

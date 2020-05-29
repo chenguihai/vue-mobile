@@ -1,0 +1,146 @@
+.enterprise {
+    &>header {
+        height: rem(88);
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: rem(1) solid #ccc;
+
+        &>div {
+            &>img {
+                display: block;
+                width: rem(20);
+                height: rem(36);
+                margin-left: rem(30);
+            }
+        }
+
+        &>h2 {
+            font-size: rem(34);
+            color: #030303;
+        }
+
+        &>.dian {
+            display: flex;
+            margin-right: rem(44);
+
+            &>div {
+                width: rem(8);
+                height: rem(8);
+                border-radius: 50%;
+                background: #999;
+                margin-right: 6px;
+            }
+        }
+
+    }
+
+    &>.entData {
+        &>span {
+            display: block;
+            height: rem(77);
+            background: #f4f6f8;
+            font-size: rem(30);
+            color: #333;
+            padding-left: rem(45);
+            line-height: rem(77);
+            font-weight: 500;
+        }
+
+        &>div {
+            padding: 0 rem(14);
+            &>.radioEnt {
+                display: flex;
+                align-items: center;
+                height: rem(97);
+                border-bottom: 1px solid #ccc;
+
+                &>span {
+                    font-size: rem(24);
+                }
+
+                &>.InvoiceType {
+                    font-size: rem(24);
+
+                    &>.van-cell__value {
+                        display: flex;
+                        justify-content: space-between;
+
+                        &>span:nth-child(2) {
+                            color: #999;
+                        }
+
+                    }
+
+                }
+
+                &>.bounced {
+
+                    &>.selected {
+
+                        &>.van-hairline--top-bottom {
+
+                            &>.van-picker__cancel,
+                            .van-picker__confirm {
+                                padding: 0 rem(90);
+                            }
+                        }
+
+                        .van-picker-column__item {
+                            color: #333;
+
+                        }
+
+                    }
+                }
+
+                &>.InvoiceTitle {
+                    width: 100%;
+                    &>.van-cell {
+                        font-size: rem(24);
+                        display: flex;
+                        &>.van-cell__title{
+                            width: rem(200);
+                        }
+                        &>.van-cell__value {
+                            &>.van-field__body {
+                                display: flex;
+                                justify-content: flex-end;
+                                &>.van-field__control {
+                                    text-align: left;
+                                    width: rem(380);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &>.redioC,
+                &>.bounced,
+                &>.InvoiceTitle {
+                    &>.van-cell {
+                        padding: 0 rem(51) 0 rem(32) !important;
+                    }
+
+                }
+
+            }
+        }
+        &>.nextWay{
+            width: rem(690);
+            height: rem(88);
+            border-radius: rem(4);
+            text-align: center;
+            line-height: rem(88);
+            font-size: rem(30);
+            color: #fff;
+            margin: rem(144) 0 rem(36) rem(20);
+            &>.van-button{
+                height: rem(88) !important;
+                line-height: rem(88);
+            }
+        }
+    }
+}

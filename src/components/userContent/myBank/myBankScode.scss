@@ -1,0 +1,269 @@
+.myBank {
+  &>header {
+    height: rem(88);
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>div {
+      &>img {
+        display: block;
+        width: rem(20);
+        height: rem(36);
+        margin-left: rem(20);
+      }
+    }
+
+    &>h2 {
+      font-size: rem(34);
+      color: #030303;
+    }
+
+    &>.dian {
+      display: flex;
+      margin-right: rem(44);
+
+      &>div {
+        width: rem(8);
+        height: rem(8);
+        border-radius: 50%;
+        background: #999;
+        margin-right: 6px;
+      }
+    }
+
+  }
+
+  &>.myBankList {
+    padding: rem(88) 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>.myBankTow {
+      width: 100%;
+      padding: rem(25) 0 0 0;
+      height: rem(40);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+
+      &>ul {
+        width: rem(673);
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border-bottom: rem(2) solid rgba(204, 204, 204, 1);
+
+        &>li {
+          width: rem(269);
+          padding-bottom: rem(14);
+          font-size: rem(28);
+          color: #666;
+          text-align: center;
+
+        }
+
+        &>li:nth-child(1) {
+          margin-right: rem(136);
+        }
+
+        &>.activeBank {
+          color: #f3262d;
+          border-bottom: rem(1) solid #f3262d;
+        }
+      }
+    }
+
+    &>.BankLf {
+      background: #f4f6f8;
+    }
+
+    &>.index0 {
+      width: 100%;
+    }
+
+    &>.BankL,
+    &>.Bankg {
+      background: #f4f6f8;
+      min-height: rem(1180);
+      min-height: rem(1176);
+      width: 100%;
+      margin: 0;
+      // margin: rem(31) 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &>.myBankAdd {
+        width: rem(665);
+      }
+    }
+  }
+
+  &>.myBankG {
+    padding: rem(88) 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    &>span {
+      text-align: left;
+      width: 100%;
+      font-size: 30px;
+      color: #333;
+      background: #f4f6f8;
+      padding: rem(17) 0 rem(18) rem(30);
+    }
+  }
+
+  &>.aaaa {
+    height: rem(1156);
+    background: #fff;
+  }
+
+  .noBank {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: rem(30);
+    color: #333;
+    background: #ffffff;
+    height: rem(1180);
+
+    &>img {
+      width: rem(160);
+      height: rem(160);
+      margin-top: rem(153);
+    }
+
+    &>:nth-child(3) {
+      width: rem(580);
+      height: rem(100);
+      font-size: rem(34);
+      color: #f32623;
+      border: 1px solid #f3262d;
+      border-radius: rem(10);
+      text-align: center;
+      line-height: rem(100);
+      margin-top: rem(54);
+
+    }
+  }
+
+  .myBankData {
+    margin-top: rem(31);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>ul {
+      width: 88.4%;
+
+      &>li {
+        height: rem(170);
+        padding: rem(40) rem(60);
+        border-radius: rem(10);
+        background-size: rem(663) rem(254);
+        font-size: rem(34);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: rem(20);
+        margin-bottom: 0.38rem;
+
+        &>.bankNum {
+          display: flex;
+          justify-content: space-between;
+
+          &>div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+
+            &>span:nth-child(2) {
+              font-size: rem(28);
+              margin-top: rem(20);
+            }
+          }
+
+          &>div:nth-child(2) {
+            font-size: rem(30);
+          }
+        }
+      }
+
+      &>li:nth-child(3n+1) {
+        background: url('../../../assets/userContent/beijing1.png');
+      }
+
+      &>li:nth-child(3n+2) {
+        background: url('../../../assets/userContent/beijing2.png');
+      }
+
+      &>li:nth-child(3n+3) {
+        background: url('../../../assets/userContent/beijing3.png');
+      }
+
+    }
+
+    &>.myBankAdd {
+      width: 100%;
+      height: rem(110);
+      background: #fff;
+      box-shadow: rem(2) rem(2) rem(4) rem(4) rgba(230, 230, 230, 0.5);
+      border-radius: rem(18);
+      display: flex;
+      align-items: center;
+
+      &>img {
+        widows: 0.54rem;
+        height: 0.54rem;
+        margin: 0 rem(10) 0 rem(60);
+      }
+
+      &>span {
+        font-size: rem(34);
+        color: #333;
+      }
+    }
+  }
+
+  .myBankGL {
+    background: #ffffff;
+    min-height: rem(1149);
+    width: 100%;
+    margin: 0;
+    padding: rem(31) 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>ul {
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // width: 74.4%;
+    }
+
+    &>.myBankAdd {
+      width: 88.6% //rem(665);
+    }
+  }
+
+
+}
